@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ödev</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- ek stiller -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/bootstrap-social.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="ckeditor/samples/css/samples.css" rel="stylesheet" />
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+
+    <style>   .hadi{
+    width:200px;
+    height:150px;
+    background-color:steelblue;
+    border : 4px solid black;
+    border-radius:15px;
+    float:left; /*alt alta değild e yan yana sıralanmasını sağlar*/
+
+}
+div:hover { /*divin üzerine gelindiğinde*/
+    cursor:pointer;
+    background-color:red;
+    transition:1s; /*geçiş süresi 1 saniye kırmızı olması*/
+    transform:rotate(360deg); /*360 derece döndürür*/
+
+} 
+
+@keyframes Animasyonyap{ /* fonksiyon tanımlar gibi işelm tanımlıyoruz*/
+0%{/* başlangıç*/
+   margin-top:0px;
+   margin-left:200px;
+}
+25%{ /*kaymalar*/
+     margin-top:0px;
+     margin-left:600px;
+     background-color:lightpink;
+}
+50%{
+    margin-left:600px;
+    margin-top: 500px;
+    background-color:lightgreen;
+
+}
+75%{
+    margin-top:500px;
+    margin-left:200px;
+    background-color:aqua;
+}
+100%{/*bitiş anı*/
+     margin-left:200px;
+     margin-top:0px;
+     background-color:steelblue;
+
+}
+
+
+
+
+
+}
+#animasyon{
+    position:absolute;
+}
+#animasyon:hover{
+    animation:Animasyonyap 10s;
+}
+#sabit{
+    position:fixed;
+    margin-top:300px;
+}      </style>
+</head>
+
+<body>
+    <!--menü başlangıç-->
+    <header >
+        <nav class="navbar navbar-default" >
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="anasayfa.html">Ödev</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="ckeditor.html">CKEDİTOR</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="modelform.html">ModelForm</a></li>
+                        <li><a href="videolar.html">Videolar</a></li>
+                        <li><a href="formeleman.html">Form Elemanları</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tablolar <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="normaltablo.html">Normal Tablo</a></li>
+                                <li><a href="datatable.html">Data Table</a></li>
+                                
+                               
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </header>
+
+ <!--menü bitiş-->
+
+    <!--içerik-->
+    
+        <div class="hadi"></div>
+        <div id="animasyon"></div>
+        <div class="hadi"></div>
+        <div class="hadi"></div>
+        <div class="hadi"></div>
+        <div id="sabit"></div> <!--sayfa aşağı insede bulunduğu yerde kalır-->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    
+
+
+</body>
+</html>
